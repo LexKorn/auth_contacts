@@ -32,20 +32,8 @@
     },
     {
       "name": "Fox",
-      "phone": "222",
-      "owner": "e670daad-9891-46ee-a9f1-c5c68fea6242",
-      "id": "6ac8062b-9afb-45be-a7ae-719549769214"
-    },
-    {
-      "name": "Fox",
       "phone": "999",
       "id": "612f4c5c-eae1-4d47-a48d-c2ad0bb9039b"
-    },
-    {
-      "name": "Bear",
-      "phone": "444",
-      "owner": "e670daad-9891-46ee-a9f1-c5c68fea6242",
-      "id": "aae7b2f8-89d2-451c-b873-7eedaec75dc9"
     },
     {
       "name": "Chicken",
@@ -78,12 +66,6 @@
       "id": "5ee3e2be-6246-4e30-b5fb-316ea6fc2097"
     },
     {
-      "name": "Wolf",
-      "phone": "888",
-      "owner": "e670daad-9891-46ee-a9f1-c5c68fea6242",
-      "id": "d583af4c-1573-441f-a27c-aeacf36f9ca7"
-    },
-    {
       "name": "Fox-2",
       "phone": "007",
       "owner": "148a12ff-7ff3-4f59-9b45-e3024b775add",
@@ -108,10 +90,28 @@
       "id": "49ed59c0-0b61-4a44-a110-f437d23a785b"
     },
     {
-      "name": "Boar",
-      "phone": "666",
-      "id": "dfbefff8-18e2-497f-bd00-e1a9e224baad",
-      "owner": "e670daad-9891-46ee-a9f1-c5c68fea6242"
+      "name": "Deer",
+      "phone": "1111",
+      "owner": "e670daad-9891-46ee-a9f1-c5c68fea6242",
+      "id": "efe080ac-c2d6-42d3-aafa-af04bcae4262"
+    },
+    {
+      "name": "Elk",
+      "phone": "8888",
+      "owner": "e670daad-9891-46ee-a9f1-c5c68fea6242",
+      "id": "c5c1cf92-9b17-45a3-a462-e00d6ee91bc1"
+    },
+    {
+      "name": "Hare",
+      "phone": "351",
+      "owner": "e670daad-9891-46ee-a9f1-c5c68fea6242",
+      "id": "4d55240a-089f-46f2-ac35-9279eb221b9e"
+    },
+    {
+      "name": "Rabbit",
+      "phone": "777",
+      "owner": "e670daad-9891-46ee-a9f1-c5c68fea6242",
+      "id": "79550591-f404-423b-8b1f-b00c70efc441"
     }
   ],
   "register": [

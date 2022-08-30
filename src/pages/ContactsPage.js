@@ -28,16 +28,16 @@ export const ContactsPage = () => {
     const [nameInput, setNameInput] = useState('');
 
     // GET contact
-    useEffect(() => {
-		fetchContacts();
-	}, []);
-
 	const fetchContacts = async () => {
         dispatch(CONTACTS_FETCHING());
-        request(`${BACK_URL}/contacts?owner=${userId}`)
+        await request(`${BACK_URL}/contacts?owner=${userId}`)
             .then(data => dispatch(CONTACTS_FETCHED(data)))
             .catch(() => dispatch(CONTACTS_FETCHING_ERROR()));
 	};
+
+    useEffect(() => {
+		fetchContacts();
+	}, []);
 
     if (contactsLoadingStatus === 'loading') {
         return <Loader />
@@ -60,7 +60,7 @@ export const ContactsPage = () => {
 			return message('Все поля обязательны для заполнения');
 		}
 
-        request(`${BACK_URL}/contacts`, 'POST', { name, phone, id: uuidv4(), owner: userId })
+        await request(`${BACK_URL}/contacts`, 'POST', { name, phone, id: uuidv4(), owner: userId })
             .then(data => dispatch(ADD_CONTACT(data)))
             .catch(err => console.error(err.message));
 

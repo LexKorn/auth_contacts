@@ -37,7 +37,7 @@ export function EditPage() {
 			return message('Все поля обязательны для заполнения');
 		}
 
-		request(`${BACK_URL}/contacts/${id}`, 'PUT', { name, phone, owner: userId })
+		await request(`${BACK_URL}/contacts/${id}`, 'PUT', { name, phone, owner: userId })
 			.then(data => {
 				dispatch(UPDATE_CONTACT(data));
 			})
